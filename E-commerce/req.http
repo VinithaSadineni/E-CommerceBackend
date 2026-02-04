@@ -1,0 +1,27 @@
+###
+POST http://localhost:3800/products-api/products
+Content-Type: application/json
+
+{
+    "productName":"microwave",
+    "price":"500",
+    "brand":"sony"
+}
+### create users
+POST http://localhost:3800/user-api/users
+Content-Type: application/json
+
+{
+    "name":"demoo",
+    "email":"demooo@gmail",
+    "password":"demooo",
+    "cart":[]
+
+}
+
+### req product to cart
+PUT http://localhost:3800/user-api/user-cart/user-id/698189d00c9df444d8fc9f12/product-id/6980724ed29e0e9da372b115
+###read users by id
+GET http://localhost:3800/user-api/users/698189d00c9df444d8fc9f12
+### quantity
+PUT http://localhost:3800/user-api/user-cart/user-id/698189d00c9df444d8fc9f12/product-id/
